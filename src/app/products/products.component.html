@@ -1,0 +1,7 @@
+<div class="sidebar padding">
+    <app-product-list (selectProductEvent)="selectedItem = $event"></app-product-list>
+</div>
+
+<div class="detail padding">
+    <app-product-detail [currentProduct]="selectedItem"></app-product-detail>
+</div>
